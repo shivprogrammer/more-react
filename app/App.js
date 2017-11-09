@@ -12,6 +12,8 @@ import {
   View
 } from 'react-native';
 
+import { LoginButton } from 'react-native-fbsdk'
+
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
     'Cmd+D or shake for dev menu',
@@ -32,6 +34,10 @@ export default class App extends Component<{}> {
         <Text style={styles.instructions}>
           {instructions}
         </Text>
+        <LoginButton
+           onLoginFinished={() => ({})}
+           onLogoutFinished={() => ({})}
+           defaultAudience='everyone' />
       </View>
     );
   }

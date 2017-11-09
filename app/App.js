@@ -21,12 +21,17 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 });
 
+const welcome = Platform.select({
+  ios: 'Welcome to React Native iOS!',
+  android: 'Welcome to React Native Android!'
+})
+
 export default class App extends Component<{}> {
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native!
+          {welcome}
         </Text>
         <Text style={styles.instructions}>
           To get started, edit App.js

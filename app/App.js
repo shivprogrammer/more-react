@@ -19,12 +19,17 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 });
 
+const welcomeMessage = Platform.select({
+  ios: 'Welcome to React Native iOS!',
+  android: 'Welcome to React Native Android!'
+})
+
 export default class ShivReact extends Component {
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native!
+          {welcomeMessage}
         </Text>
         <Text style={styles.instructions}>
           To get started, edit App.js

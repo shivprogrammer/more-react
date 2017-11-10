@@ -1,9 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import React, { Component } from 'react';
 import {
   Platform,
@@ -22,7 +16,7 @@ const instructions = Platform.select({
 });
 
 const welcomeMessage = Platform.select({
-  ios: 'Welcome to React Native iOS! WHAT THE FUCK IS GOING ON',
+  ios: 'Welcome to React Native iOS!',
   android: 'Welcome to React Native Android!'
 })
 

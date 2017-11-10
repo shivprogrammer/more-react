@@ -12,7 +12,7 @@ import {
   View
 } from 'react-native';
 
-// import { LoginButton } from 'react-native-fbsdk'
+import { LoginButton } from 'react-native-fbsdk'
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -39,10 +39,10 @@ export default class ShivReact extends Component {
         <Text style={styles.instructions}>
           {instructions}
         </Text>
-        {/* <LoginButton
+        <LoginButton
            onLoginFinished={() => ({})}
            onLogoutFinished={() => ({})}
-           defaultAudience='everyone' /> */}
+           defaultAudience='everyone' />
       </View>
     );
   }

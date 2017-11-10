@@ -33,7 +33,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
-            new FBSDKPackage(mCallbackManager)
+          new FBSDKPackage(mCallbackManager)
       );
     }
 
@@ -48,11 +48,11 @@ public class MainApplication extends Application implements ReactApplication {
     return mReactNativeHost;
   }
 
-  @Override
-  public void onCreate() {
-    super.onCreate();
-    SoLoader.init(this, /* native exopackage */ false);
-  }
+  // @Override
+  // public void onCreate() {
+  //   super.onCreate();
+  //   SoLoader.init(this, /* native exopackage */ false);
+  // }
 
   @Override
   public void onCreate() {

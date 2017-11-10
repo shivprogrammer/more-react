@@ -12,6 +12,8 @@ import {
   View
 } from 'react-native';
 
+// import { LoginButton } from 'react-native-fbsdk'
+
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
     'Cmd+D or shake for dev menu',
@@ -20,7 +22,7 @@ const instructions = Platform.select({
 });
 
 const welcomeMessage = Platform.select({
-  ios: 'Welcome to React Native iOS!',
+  ios: 'Welcome to React Native iOS! WHAT THE FUCK IS GOING ON',
   android: 'Welcome to React Native Android!'
 })
 
@@ -37,6 +39,10 @@ export default class ShivReact extends Component {
         <Text style={styles.instructions}>
           {instructions}
         </Text>
+        {/* <LoginButton
+           onLoginFinished={() => ({})}
+           onLogoutFinished={() => ({})}
+           defaultAudience='everyone' /> */}
       </View>
     );
   }

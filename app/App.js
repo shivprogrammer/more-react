@@ -12,7 +12,7 @@ import {
   View
 } from 'react-native';
 
-import { LoginButton } from 'react-native-fbsdk'
+// import { LoginButton } from 'react-native-fbsdk'
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -21,7 +21,12 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 });
 
-export default class App extends Component<{}> {
+const welcomeMessage = Platform.select({
+  ios: 'Welcome to React Native iOS!',
+  android: 'Welcome to React Native Android!'
+})
+
+export default class ShivReact extends Component {
   render() {
     return (
       <View style={styles.container}>
@@ -34,10 +39,10 @@ export default class App extends Component<{}> {
         <Text style={styles.instructions}>
           {instructions}
         </Text>
-        <LoginButton
+        {/* <LoginButton
            onLoginFinished={() => ({})}
            onLogoutFinished={() => ({})}
-           defaultAudience='everyone' />
+           defaultAudience='everyone' /> */}
       </View>
     );
   }

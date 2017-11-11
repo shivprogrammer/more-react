@@ -1,5 +1,5 @@
-import React, { PropTypes } from 'react';
-import { View, Stylesheet, Text } from 'react-native';
+import React, { PropTypes } from 'react'
+import { View, StyleSheet, Text } from 'react-native'
 
 Splash.propTypes = {
 
@@ -15,6 +15,6 @@ export default function Splash (props) {
   )
 }
 
-const styles = Stylesheet.create({
-  
+const styles = StyleSheet.create({
+
 })

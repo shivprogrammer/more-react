@@ -1,9 +1,9 @@
-import React, { PropTypes, Component } from 'react';
-import { View } from 'react-native';
-import { ShivReactNavigator } from '~/containers';
+import React, { PropTypes, Component } from 'react'
+import { View } from 'react-native'
+import { ShivReactNavigator } from '~/containers'
 
 export default class AppContainer extends Component {
-  render() {
+  render () {
     return (
       <View style={{flex: 1}}>
         <ShivReactNavigator />
